@@ -35,12 +35,19 @@ class MyCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
-            Text(
-              'Balance',
-              style: TextStyle(
-                color: Colors.white,
-              ),
+            SizedBox(height: 5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Balance',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Image.asset('icons/visa.png',
+                height: 50,)
+              ],
             ),
 
             SizedBox(height: 10),
@@ -50,7 +57,8 @@ class MyCard extends StatelessWidget {
               '\$' + Balance.toString(),
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 35,
+                fontWeight: FontWeight.bold
               ),
             ),
             SizedBox(height: 30),
